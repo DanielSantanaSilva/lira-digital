@@ -59,7 +59,7 @@ export default function Clients() {
             >
               <img
                 alt={`Logo ${logo.name}`}
-                className="max-h-28 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0 cursor-pointer"
+                className="max-h-28 w-auto object-contain opacity-100 transition-opacity duration-300 filter grayscale-0 cursor-pointer md:opacity-50 md:grayscale md:hover:opacity-100 md:hover:grayscale-0"
                 src={logo.url}
               />
             </motion.div>
