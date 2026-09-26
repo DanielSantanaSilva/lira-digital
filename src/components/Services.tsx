@@ -9,34 +9,6 @@ interface ServicesProps {
 export default function Services({ onSelectService }: ServicesProps) {
   const serviceList: Service[] = [
     {
-      id: "estrategia",
-      iconName: "TrendingUp",
-      title: "Estratégia",
-      shortDescription: "Planejamento focado em objetivos de negócio e análise de mercado profunda.",
-      fullDescription: "Conectamos sua marca com soluções de crescimento inovadoras. Mapeamos jornadas de clientes, analisamos a concorrência de forma implacável e usamos inteligência competitiva para criar planos de mídia e conteúdo focados em pura performance.",
-      features: [
-        "Pesquisa de mercado & Benchmarking competitivo",
-        "Mapeamento da jornada do cliente ideal (ICP)",
-        "Auditoria completa de canais e histórico digital",
-        "Planejamento anual refinado com metas claras de ROI"
-      ],
-      metrics: "Previsibilidade de Retorno sobre Investimento (ROI)"
-    },
-    {
-      id: "redes-sociais",
-      iconName: "Share2",
-      title: "Redes Sociais",
-      shortDescription: "Presença digital relevante com conteúdo que engaja e converte sua audiência.",
-      fullDescription: "Não se trata apenas de curtidas, mas de construir uma comunidade qualificada que se identifica com o seu propósito. Criamos narrativas fortes, rituais de marca e designs de altíssimo padrão que saltam aos olhos para fidelizar clientes.",
-      features: [
-        "Identidade visual moderna e padronização premium",
-        "Gestão de comunidade, engajamento & SAC social",
-        "Copywriting estratégico focado em neurovendas",
-        "Relatórios mensais detalhados de alcance e conversão"
-      ],
-      metrics: "Taxa de Engajamento Qualificado"
-    },
-    {
       id: "landing-pages-sites",
       iconName: "Globe",
       title: "Landing Pages & Sites",
@@ -63,6 +35,34 @@ export default function Services({ onSelectService }: ServicesProps) {
         "Estrutura avançada de Remarketing multi-canal"
       ],
       metrics: "ROAS (Retorno Médio de Gasto com Anúncios)"
+    },
+    {
+      id: "estrategia",
+      iconName: "TrendingUp",
+      title: "Estratégia",
+      shortDescription: "Planejamento focado em objetivos de negócio e análise de mercado profunda.",
+      fullDescription: "Conectamos sua marca com soluções de crescimento inovadoras. Mapeamos jornadas de clientes, analisamos a concorrência de forma implacável e usamos inteligência competitiva para criar planos de mídia e conteúdo focados em pura performance.",
+      features: [
+        "Pesquisa de mercado & Benchmarking competitivo",
+        "Mapeamento da jornada do cliente ideal (ICP)",
+        "Auditoria completa de canais e histórico digital",
+        "Planejamento anual refinado com metas claras de ROI"
+      ],
+      metrics: "Previsibilidade de Retorno sobre Investimento (ROI)"
+    },
+    {
+      id: "redes-sociais",
+      iconName: "Share2",
+      title: "Redes Sociais",
+      shortDescription: "Presença digital relevante com conteúdo que engaja e converte sua audiência.",
+      fullDescription: "Não se trata apenas de curtidas, mas de construir uma comunidade qualificada que se identifica com o seu propósito. Criamos narrativas fortes, rituais de marca e designs de altíssimo padrão que saltam aos olhos para fidelizar clientes.",
+      features: [
+        "Identidade visual moderna e padronização premium",
+        "Gestão de comunidade, engajamento & SAC social",
+        "Copywriting estratégico focado em neurovendas",
+        "Relatórios mensais detalhados de alcance e conversão"
+      ],
+      metrics: "Taxa de Engajamento Qualificado"
     },
     {
       id: "conteudo",
@@ -156,7 +156,7 @@ export default function Services({ onSelectService }: ServicesProps) {
               onClick={() => onSelectService(service)}
               className="text-secondary font-mono text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300 cursor-pointer self-start"
             >
-              SAIBA MAIS 
+              SAIBA MAIS
               <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
             </button>
           </motion.div>
