@@ -17,22 +17,14 @@ export default function Footer() {
           <div className="flex flex-col gap-6 lg:col-span-3">
             <div className="flex items-center gap-3 group">
               <img
-                src="/assets/logo.png"
-                alt="Logo Vértice Marketing Digital"
+                src="/assets/logo-liras.jpg"
+                alt="Logo Lira Digital"
                 className="h-14 md:h-16 w-auto transition-transform duration-300 group-hover:scale-[1.05] logo-img floating-logo"
               />
-              <div className="flex flex-col justify-center leading-none">
-                <span className="font-display text-lg font-extrabold text-[#d5e3fc] tracking-wide">
-                  VÉRTICE
-                </span>
-                <span className="font-sans text-[8px] font-bold text-[#5de6ff] tracking-[0.2em] uppercase mt-0.5">
-                  MARKETING DIGITAL
-                </span>
-              </div>
             </div>
 
             <p className="font-sans text-body-md text-on-surface-variant leading-relaxed max-w-sm">
-              Referência em performance digital de alta performance, SEO tático e estratégia focada em dados integrados no Brasil. Transformando marcas com precisão analítica.
+              Referência em performance digital e estratégia focada em dados. A Lira Digital transforma marcas com precisão analítica e resultados reais.
             </p>
 
           </div>
@@ -81,7 +73,7 @@ export default function Footer() {
         {/* Subfooter */}
         <div className="mt-16 pt-8 border-t border-outline-variant/10 px-6 md:px-16 max-w-[1280px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
           <p className="font-sans text-xs text-on-surface-variant opacity-60 text-center sm:text-left">
-            © {currentYear} VÉRTICE Marketing Digital. Todos os direitos reservados. Precision in every pixel.
+            © {currentYear} Lira Digital. Todos os direitos reservados. Precision in every pixel.
           </p>
           <div className="flex gap-6 font-sans text-xs">
             <button

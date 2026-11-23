@@ -14,7 +14,7 @@ export default function CTA() {
           viewport={{ once: true }}
           className="font-mono text-xs uppercase tracking-[0.4em] mb-6 block font-extrabold text-on-secondary/90"
         >
-          #vempravértice
+          #vempraliraldigital
         </motion.span>
         
         <motion.h2 

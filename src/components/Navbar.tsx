@@ -18,18 +18,10 @@ export default function Navbar() {
       <div className="flex justify-between items-center px-6 md:px-16 py-4 max-w-[1280px] mx-auto">
         <a href="#hero" className="flex items-center gap-3 group">
           <img
-            src="/assets/logo.png"
-            alt="Logo Vértice Marketing Digital"
+            src="/assets/logo-liras.jpg"
+            alt="Logo Lira Digital"
             className="h-14 md:h-16 w-auto transition-transform duration-300 group-hover:scale-[1.05] logo-img floating-logo"
           />
-          <div className="flex flex-col justify-center leading-none">
-            <span className="font-display text-lg md:text-xl font-extrabold text-white tracking-wide">
-              VÉRTICE
-            </span>
-            <span className="font-sans text-[8px] md:text-[9px] font-bold text-[#5de6ff] tracking-[0.2em] uppercase mt-0.5">
-              MARKETING DIGITAL
-            </span>
-          </div>
         </a>
 
         {/* Desktop Nav */}

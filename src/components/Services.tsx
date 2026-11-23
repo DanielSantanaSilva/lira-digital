@@ -125,7 +125,7 @@ export default function Services({ onSelectService }: ServicesProps) {
           </h2>
         </div>
         <p className="font-sans text-body-md text-on-surface-variant max-w-md lg:mb-2 leading-relaxed">
-          Entenda como a VÉRTICE utiliza dados refinados e planejamento criativo para criar impacto mercantil robusto através de nossa suite de inteligência digital.
+          Entenda como a LIRA DIGITAL utiliza dados refinados e planejamento criativo para criar impacto mercantil robusto através de nossa suite de inteligência digital.
         </p>
       </div>
 

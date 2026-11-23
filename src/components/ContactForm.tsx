@@ -49,7 +49,7 @@ export default function ContactForm() {
         Email: formData.email,
         Website: formData.website,
         Mensagem: formData.message,
-        _subject: "Novo contato do site - Vértice Marketing Digital"
+        _subject: "Novo contato do site - Lira Digital"
       })
     })
       .then(response => {

@@ -24,7 +24,7 @@ export default function Diferenciais() {
     {
       num: "04",
       icon: <Compass size={22} className="text-secondary" />,
-      title: "Metodologia Vértice",
+      title: "Metodologia Lira Digital",
       desc: "Nossos processos internos aceleram o onboarding de novas marcas e garantem consistência operacional livre de erros humanos."
     },
     {

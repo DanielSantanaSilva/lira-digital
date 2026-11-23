@@ -8,10 +8,10 @@ interface LegalModalProps {
   onClose: () => void;
 }
 
-const COMPANY = "VÉRTICE Marketing Digital";
+const COMPANY = "Lira Digital";
 const CNPJ = "XX.XXX.XXX/0001-XX"; // Substituir pelo CNPJ real
-const EMAIL = "privacidade@vertice.digital"; // Substituir pelo e-mail real
-const SITE = "www.vertice.digital";
+const EMAIL = "contato@liradigital.com.br"; // Substituir pelo e-mail real
+const SITE = "www.liradigital.com.br";
 
 const privacyContent = {
   title: "Política de Privacidade",

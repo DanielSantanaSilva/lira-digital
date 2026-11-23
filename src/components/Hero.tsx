@@ -54,7 +54,20 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative min-h-[85vh] flex items-center px-6 md:px-16 py-16 md:py-24 max-w-[1280px] mx-auto overflow-hidden" id="hero">
+    <section
+      className="relative w-full overflow-hidden"
+      id="hero"
+      style={{
+        backgroundImage: "url('/assets/bg-predios.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center top",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* Dark overlay for legibility */}
+      <div className="absolute inset-0 bg-[#051425]/75 pointer-events-none z-0" />
+
+      <div className="relative z-10 min-h-[85vh] flex items-center px-6 md:px-16 py-16 md:py-24 max-w-[1280px] mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
         {/* Core narrative section */}
         <div className="lg:col-span-7 z-10 text-left">
@@ -89,7 +102,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="font-sans text-body-lg text-on-surface-variant mb-10 max-w-xl leading-relaxed"
           >
-            Somos a Vértice, especialistas em performance digital e conteúdo data-driven. Transformamos sua presença online em crescimento real através de estratégia, redes sociais e mídia paga de alta performance.
+            Somos a Lira Digital, especialistas em performance digital e conteúdo data-driven. Transformamos sua presença online em crescimento real através de estratégia, redes sociais e mídia paga de alta performance.
           </motion.p>
 
           <motion.div
@@ -102,7 +115,7 @@ export default function Hero() {
               href="#contato"
               className="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-display text-base font-bold flex items-center justify-center gap-3 cyan-glow hover:brightness-110 transition-all duration-300 group"
             >
-              FALE COM A VÉRTICE
+              FALE COM A LIRA DIGITAL
               <Rocket className="group-hover:translate-x-1 group-hover:scale-110 transition-transform w-5 h-5 text-on-secondary" />
             </a>
           </motion.div>
@@ -122,7 +135,7 @@ export default function Hero() {
 
               {/* Glowing core logo center point */}
               <div className="relative z-20 w-24 h-24 bg-surface rounded-full flex items-center justify-center border-2 border-secondary cyan-glow shadow-2xl">
-                <span className="font-display text-secondary text-5xl font-extrabold">V</span>
+                <span className="font-display text-secondary text-5xl font-extrabold">L</span>
                 <div className="absolute inset-0 rounded-full animate-ping bg-secondary/15"></div>
               </div>
 
@@ -168,6 +181,7 @@ export default function Hero() {
 
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
