@@ -1,38 +1,38 @@
 import { motion } from "motion/react";
-import { Award, Zap, RefreshCw, Layers, Compass } from "lucide-react";
+import { BarChart3, Gauge, Target, UserRoundCheck, TrendingUp } from "lucide-react";
 
 export default function Diferenciais() {
   const list = [
     {
       num: "01",
-      icon: <Layers size={22} className="text-secondary" />,
-      title: "Atendimento Parceiro",
-      desc: "Cliente e agência atuando como um só time, com transparência total de canais, dados abertos e proatividade constante no planejamento."
+      icon: <Target size={22} className="text-secondary" />,
+      title: "Campanhas com objetivo claro",
+      desc: "Cada campanha nasce de uma meta comercial definida: gerar leads, preencher agenda, aumentar oportunidades ou acelerar vendas. Nada de mídia sem direção.",
     },
     {
       num: "02",
-      icon: <Zap size={22} className="text-secondary" />,
-      title: "Data-Driven Decisions",
-      desc: "Análise analítica de alto nível. Unimos tecnologia proprietária e dados brutos para construir estratégias de escala previsíveis."
+      icon: <BarChart3 size={22} className="text-secondary" />,
+      title: "Leads que fazem sentido",
+      desc: "Otimizamos a operação pela qualidade das oportunidades, não por métricas de vaidade. Acompanhamos origem, perfil e avanço dos leads no funil.",
     },
     {
       num: "03",
-      icon: <RefreshCw size={22} className="text-secondary" />,
-      title: "Melhoria Contínua",
-      desc: "Feedback contínuo pós-análise diária de lances e performance. Testamos ideias novas toda semana com mentalidade de startup."
+      icon: <Gauge size={22} className="text-secondary" />,
+      title: "Otimização diária de performance",
+      desc: "Analisamos anúncios, públicos, palavras-chave e páginas para redistribuir verba rapidamente e reduzir desperdícios ao longo da operação.",
     },
     {
       num: "04",
-      icon: <Compass size={22} className="text-secondary" />,
-      title: "Metodologia Lira Digital",
-      desc: "Nossos processos internos aceleram o onboarding de novas marcas e garantem consistência operacional livre de erros humanos."
+      icon: <UserRoundCheck size={22} className="text-secondary" />,
+      title: "Mídia alinhada ao comercial",
+      desc: "Integramos marketing e vendas para entender quais leads avançam, quais objeções aparecem e quais ajustes aumentam a conversão no atendimento.",
     },
     {
       num: "05",
-      icon: <Award size={22} className="text-secondary" />,
-      title: "Especialistas Reais",
-      desc: "Aqui sua conta não é gerida por estagiários. Nosso time técnico é composto por especialistas seniores experientes em grandes carteiras digitais."
-    }
+      icon: <TrendingUp size={22} className="text-secondary" />,
+      title: "Escala com previsibilidade",
+      desc: "Depois de encontrar o que funciona, ampliamos o investimento com controle, leitura de dados e foco em manter o custo por oportunidade saudável.",
+    },
   ];
 
   return (
@@ -43,15 +43,17 @@ export default function Diferenciais() {
             #diferenciais
           </span>
           <h2 className="font-display text-2xl sm:text-3xl text-on-surface uppercase font-black tracking-normal">
-            O QUE NOS TORNA ÚNICOS
+            MÍDIA PAGA COM FOCO NO RESULTADO
           </h2>
+          <p className="font-sans text-body-md text-on-surface-variant max-w-2xl mx-auto mt-5 leading-relaxed">
+            Não entregamos apenas campanhas no ar. Construímos uma operação de aquisição orientada a leads qualificados, performance e crescimento comercial.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          {/* First 3 differential columns */}
           {list.slice(0, 3).map((item, index) => (
             <motion.div
-              key={index}
+              key={item.num}
               initial={{ opacity: 0, scale: 0.98, y: 15 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
@@ -75,10 +77,9 @@ export default function Diferenciais() {
             </motion.div>
           ))}
 
-          {/* Bottom 2 wider differential columns */}
           {list.slice(3).map((item, index) => (
             <motion.div
-              key={index + 3}
+              key={item.num}
               initial={{ opacity: 0, scale: 0.98, y: 15 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
