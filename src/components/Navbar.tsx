@@ -13,7 +13,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-[#060a14]/90 backdrop-blur-xl border-b border-white/5 transition-all duration-300">
+    <nav className="fixed top-0 w-full z-50 bg-[#061426]/90 backdrop-blur-xl border-b border-white/5 transition-all duration-300">
       <div className="flex justify-between items-center px-6 md:px-16 py-4 max-w-[1280px] mx-auto">
 
         {/* Logo */}
@@ -33,11 +33,11 @@ export default function Navbar() {
               href={link.href}
               className="font-sans font-semibold text-sm tracking-wide transition-colors duration-200"
               style={{
-                color: i === 0 ? "#c9a84c" : "rgba(255,255,255,0.75)",
-                borderBottom: i === 0 ? "2px solid #c9a84c" : "none",
+                color: i === 0 ? "#62b1ff" : "rgba(255,255,255,0.75)",
+                borderBottom: i === 0 ? "2px solid #62b1ff" : "none",
                 paddingBottom: i === 0 ? "2px" : "0",
               }}
-              onMouseEnter={e => { if (i !== 0) (e.currentTarget as HTMLElement).style.color = "#c9a84c"; }}
+              onMouseEnter={e => { if (i !== 0) (e.currentTarget as HTMLElement).style.color = "#62b1ff"; }}
               onMouseLeave={e => { if (i !== 0) (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.75)"; }}
             >
               {link.label}
@@ -51,11 +51,11 @@ export default function Navbar() {
             href="#contato"
             className="px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider hover:scale-[1.04] transition-transform duration-300 inline-block"
             style={{
-              border: "1.5px solid #c9a84c",
-              color: "#c9a84c",
+              border: "1.5px solid #62b1ff",
+              color: "#62b1ff",
             }}
             onMouseEnter={e => {
-              (e.currentTarget as HTMLElement).style.background = "rgba(201,168,76,0.1)";
+              (e.currentTarget as HTMLElement).style.background = "rgba(98,177,255,0.1)";
             }}
             onMouseLeave={e => {
               (e.currentTarget as HTMLElement).style.background = "transparent";
@@ -77,14 +77,14 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       {isOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-[#060a14]/95 border-b border-white/5 py-6 px-6 shadow-2xl">
+        <div className="lg:hidden absolute top-full left-0 w-full bg-[#061426]/95 border-b border-white/5 py-6 px-6 shadow-2xl">
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="text-white/75 font-semibold text-sm tracking-wider uppercase py-2 border-b border-white/5 transition-colors hover:text-[#c9a84c]"
+                className="text-white/75 font-semibold text-sm tracking-wider uppercase py-2 border-b border-white/5 transition-colors hover:text-[#62b1ff]"
               >
                 {link.label}
               </a>
@@ -93,7 +93,7 @@ export default function Navbar() {
               href="#contato"
               onClick={() => setIsOpen(false)}
               className="text-center py-3.5 rounded-lg text-sm font-bold uppercase tracking-wider hover:scale-[1.02] transition-transform duration-200 mt-2 inline-block"
-              style={{ border: "1.5px solid #c9a84c", color: "#c9a84c" }}
+              style={{ border: "1.5px solid #62b1ff", color: "#62b1ff" }}
             >
               COMEÇAR ›
             </a>

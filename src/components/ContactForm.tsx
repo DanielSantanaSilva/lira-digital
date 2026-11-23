@@ -38,7 +38,7 @@ export default function ContactForm() {
 
     setIsSubmitting(true);
 
-    fetch("https://formsubmit.co/ajax/contatoverticemarketingdigital@gmail.com", {
+    fetch("https://formsubmit.co/ajax/contato@liradigital.com.br", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -71,7 +71,7 @@ export default function ContactForm() {
     <section className="py-24 px-6 md:px-16 bg-surface" id="contato">
       <div className="max-w-[1280px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-          
+
           {/* Contact Details Column */}
           <div className="space-y-12">
             <div>
@@ -95,11 +95,11 @@ export default function ContactForm() {
                   <p className="font-mono text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">
                     E-mail Direto
                   </p>
-                  <a 
-                    href="mailto:contatoverticemarketingdigital@gmail.com" 
+                  <a
+                    href="mailto:contato@liradigital.com.br"
                     className="font-sans text-body-md text-on-surface hover:text-secondary transition-colors font-semibold mt-0.5 block"
                   >
-                    contatoverticemarketingdigital@gmail.com
+                    contato@liradigital.com.br
                   </a>
                 </div>
               </div>
@@ -196,7 +196,7 @@ export default function ContactForm() {
           {/* Form Block Column */}
           <div className="glass-panel p-8 sm:p-12 rounded-xl shadow-2xl relative border border-outline-variant/20">
             {submitSuccess ? (
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 className="text-center py-12 space-y-6"
@@ -294,7 +294,7 @@ export default function ContactForm() {
                   disabled={isSubmitting}
                   type="submit"
                 >
-                  {isSubmitting ? "Enviando..." : "Enviar Mensagem"} 
+                  {isSubmitting ? "Enviando..." : "Enviar Mensagem"}
                   <Send size={15} className="group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform" />
                 </button>
               </form>

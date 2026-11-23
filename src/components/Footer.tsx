@@ -73,7 +73,7 @@ export default function Footer() {
         {/* Subfooter */}
         <div className="mt-16 pt-8 border-t border-outline-variant/10 px-6 md:px-16 max-w-[1280px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
           <p className="font-sans text-xs text-on-surface-variant opacity-60 text-center sm:text-left">
-            © {currentYear} Lira Digital. Todos os direitos reservados. Precision in every pixel.
+            © {currentYear} Lira Digital. Todos os direitos reservados.
           </p>
           <div className="flex gap-6 font-sans text-xs">
             <button

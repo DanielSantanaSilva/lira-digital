@@ -6,7 +6,6 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Clients from "./components/Clients";
 import Services from "./components/Services";
 import ServiceModal from "./components/ServiceModal";
 import Diferenciais from "./components/Diferenciais";
@@ -29,9 +28,9 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#051425] text-on-surface overflow-x-hidden selection:bg-secondary selection:text-on-secondary">
+    <div className="relative min-h-screen bg-background text-on-surface overflow-x-hidden selection:bg-secondary selection:text-on-secondary">
       {/* Dynamic Background Mesh Grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#122032_1px,transparent_1px),linear-gradient(to_bottom,#122032_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30 pointer-events-none -z-10"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#173453_1px,transparent_1px),linear-gradient(to_bottom,#173453_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30 pointer-events-none -z-10"></div>
       
       {/* Decorative colored ambient light sources */}
       <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[60%] rounded-full bg-secondary/5 blur-[120px] pointer-events-none -z-10"></div>
@@ -43,9 +42,6 @@ export default function App() {
       <main className="relative pt-20">
         {/* Core Narrative Entry Point */}
         <Hero />
-
-        {/* Client Trust Partnerships Column */}
-        <Clients />
 
         {/* Channels Solutions Framework */}
         <Services onSelectService={setSelectedService} />
